@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.container {
+    max-width: 800px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.brand {
+    font-size: 24px;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff9900;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    animation: zoomIn 1s ease;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    animation: slideInLeft 1s ease;
+}
+
+.header-info p {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: #666;
+    animation: slideInRight 1s ease;
+}
+
+.section {
+    margin-top: 50px;
+    animation: fadeIn 1s ease;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.section ul {
+    padding: 0;
+    margin: 0;
+}
+
+.section ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    animation: fadeIn 1s ease;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .resume {
+        margin-top: 130px;
+    }
+
+    .header-info h1 {
+        font-size: 24px;
+    }
+
+    .header-info p {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+}
